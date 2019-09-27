@@ -23,7 +23,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        public ActionResult index(int? PageIndex, string SortBy)
+        public ActionResult index()
         {
 
 
@@ -36,6 +36,12 @@ namespace Vidly.Controllers
 
             //return Content(string.Format("Page Index = {0} and Sort By = {1}", PageIndex, SortBy));
             return View(moviesList.ToList());
+        }
+
+        public ActionResult Details(int id)
+        {
+            var movies = _context.Movies.Include(m => m.genre).SingleOrDefault(mm => mm.id == id);
+            return View(movies);
         }
 
         [Route("movie/release/{year}/{month:regex(\\d{4}):range(1,12)}")]
