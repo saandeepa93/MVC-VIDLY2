@@ -13,7 +13,11 @@
 
 <table>
     <thead>
-        <tr>Customer List</tr>
+        <tr>
+            <th>Customer List</th>
+            <th>Type</th>
+        </tr>
+        
     </thead>
     <tbody>
         @foreach(var cl in Model)
@@ -21,6 +25,7 @@
             <tr>
                 
                 <td>@Html.ActionLink(cl.name, "Details", "Customer", new { id = cl.id }, null)</td>
+                <td>@cl.memberShipType.membershipName</td>
             </tr>
         }
     </tbody>

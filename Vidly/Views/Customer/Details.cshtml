@@ -4,8 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@if(Model)
 
 <h2>Details</h2>
-<h4>@Model.name</h4>
+<ul>
+    <li>@Model.memberShipType.membershipName</li>
+    <li>@Model.birthDate</li>
+</ul>
 

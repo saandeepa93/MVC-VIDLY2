@@ -152,8 +152,45 @@
     <Compile Include="Migrations\201909262254351_PopulateMemberShipTypes.Designer.cs">
       <DependentUpon>201909262254351_PopulateMemberShipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909270119540_DataAnnotationCust.cs" />
+    <Compile Include="Migrations\201909270119540_DataAnnotationCust.Designer.cs">
+      <DependentUpon>201909270119540_DataAnnotationCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270144163_AddMembershipName.cs" />
+    <Compile Include="Migrations\201909270144163_AddMembershipName.Designer.cs">
+      <DependentUpon>201909270144163_AddMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270146005_UpdateSQLMembershipType.cs" />
+    <Compile Include="Migrations\201909270146005_UpdateSQLMembershipType.Designer.cs">
+      <DependentUpon>201909270146005_UpdateSQLMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270152468_UpdateCustbDate.cs" />
+    <Compile Include="Migrations\201909270152468_UpdateCustbDate.Designer.cs">
+      <DependentUpon>201909270152468_UpdateCustbDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270201068_AddMemandBdateCust.cs" />
+    <Compile Include="Migrations\201909270201068_AddMemandBdateCust.Designer.cs">
+      <DependentUpon>201909270201068_AddMemandBdateCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270206245_AddGenreDetails.cs" />
+    <Compile Include="Migrations\201909270206245_AddGenreDetails.Designer.cs">
+      <DependentUpon>201909270206245_AddGenreDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270209376_InsertGenreValues.cs" />
+    <Compile Include="Migrations\201909270209376_InsertGenreValues.Designer.cs">
+      <DependentUpon>201909270209376_InsertGenreValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270213568_InsertGenreValue.cs" />
+    <Compile Include="Migrations\201909270213568_InsertGenreValue.Designer.cs">
+      <DependentUpon>201909270213568_InsertGenreValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909270218028_InsertGenreValues1.cs" />
+    <Compile Include="Migrations\201909270218028_InsertGenreValues1.Designer.cs">
+      <DependentUpon>201909270218028_InsertGenreValues1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MyDBContext.cs" />
@@ -233,6 +270,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909262254351_PopulateMemberShipTypes.resx">
       <DependentUpon>201909262254351_PopulateMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270119540_DataAnnotationCust.resx">
+      <DependentUpon>201909270119540_DataAnnotationCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270144163_AddMembershipName.resx">
+      <DependentUpon>201909270144163_AddMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270146005_UpdateSQLMembershipType.resx">
+      <DependentUpon>201909270146005_UpdateSQLMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270152468_UpdateCustbDate.resx">
+      <DependentUpon>201909270152468_UpdateCustbDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270201068_AddMemandBdateCust.resx">
+      <DependentUpon>201909270201068_AddMemandBdateCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270206245_AddGenreDetails.resx">
+      <DependentUpon>201909270206245_AddGenreDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270209376_InsertGenreValues.resx">
+      <DependentUpon>201909270209376_InsertGenreValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270213568_InsertGenreValue.resx">
+      <DependentUpon>201909270213568_InsertGenreValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909270218028_InsertGenreValues1.resx">
+      <DependentUpon>201909270218028_InsertGenreValues1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -9,12 +9,14 @@
 <Table class="table-bordered">
     <thead>
         <tr>Movie</tr>
+        <tr>Genre</tr>
     </thead>
     <tbody>
         @foreach(var m in Model)
         {
             <tr>
                 <td>@m.name</td>
+                <td>@m.genre.name</td>
             </tr>
         }
     </tbody>
