@@ -46,10 +46,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -126,13 +126,37 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909262237302_InitialModel.cs" />
+    <Compile Include="Migrations\201909262237302_InitialModel.Designer.cs">
+      <DependentUpon>201909262237302_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909262244332_InsertCustValues.cs" />
+    <Compile Include="Migrations\201909262244332_InsertCustValues.Designer.cs">
+      <DependentUpon>201909262244332_InsertCustValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909262249157_IsSubscribedtoNewsLetter.cs" />
+    <Compile Include="Migrations\201909262249157_IsSubscribedtoNewsLetter.Designer.cs">
+      <DependentUpon>201909262249157_IsSubscribedtoNewsLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909262253132_AddMemberShiType.cs" />
+    <Compile Include="Migrations\201909262253132_AddMemberShiType.Designer.cs">
+      <DependentUpon>201909262253132_AddMemberShiType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909262254351_PopulateMemberShipTypes.cs" />
+    <Compile Include="Migrations\201909262254351_PopulateMemberShipTypes.Designer.cs">
+      <DependentUpon>201909262254351_PopulateMemberShipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MyDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\RandomMovie.cs" />
   </ItemGroup>
@@ -174,6 +198,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Movie\Random.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Movie\index.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -190,6 +217,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909262237302_InitialModel.resx">
+      <DependentUpon>201909262237302_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909262244332_InsertCustValues.resx">
+      <DependentUpon>201909262244332_InsertCustValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909262249157_IsSubscribedtoNewsLetter.resx">
+      <DependentUpon>201909262249157_IsSubscribedtoNewsLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909262253132_AddMemberShiType.resx">
+      <DependentUpon>201909262253132_AddMemberShiType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909262254351_PopulateMemberShipTypes.resx">
+      <DependentUpon>201909262254351_PopulateMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
